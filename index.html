@@ -26,5 +26,11 @@
   <button onclick="setMark('')" class="clear">Clear</button>      
 </div>  
     <button class="cancel" onclick="closePopup()">Cancel</button>  
-  </div>  </div>  <script src="script.js"></script>  </body>  
+  </div>  </div>  <script src="script.js"></script> 
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js");
+}
+  </script>
+</body>  
 </html>
