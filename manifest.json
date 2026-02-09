@@ -1,0 +1,15 @@
+{
+  "name": "Calendar Marks",
+  "short_name": "Calendar",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#e6f5ea",
+  "theme_color": "#4caf6a",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

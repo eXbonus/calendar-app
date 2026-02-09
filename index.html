@@ -1,0 +1,30 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>Calendar Marks</title>  <link rel="stylesheet" href="style.css">  
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Patrick+Hand&display=swap" rel="stylesheet"> 
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4caf6a">  
+</head>  <body>  <div class="app">  
+  <header>  
+    <h2>My Calendar</h2>  
+    <div class="selectors">  
+      <select id="month"></select>  
+      <select id="year"></select>  
+    </div>  
+  </header>    <div id="calendar" class="calendar"></div>  <button class="export" onclick="exportExcel()">Export to Excel</button>
+
+</div>  <!-- Popup -->  <div id="popup" class="popup">  
+  <div class="popup-box">  
+    <h4>Mark Date</h4>  
+    <div id="notePreview" class="note-preview"></div>  
+    <div class="actions">  
+  <button onclick="setMark('✔')" class="tick">✔</button>  
+  <button onclick="setMark('✖')" class="cross">✖</button>  
+  <button onclick="openNote()" class="note">Note</button>  
+  <button onclick="setMark('')" class="clear">Clear</button>      
+</div>  
+    <button class="cancel" onclick="closePopup()">Cancel</button>  
+  </div>  </div>  <script src="script.js"></script>  </body>  
+</html>
